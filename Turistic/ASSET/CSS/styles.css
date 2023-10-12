@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2{
+    font-family: 'Charm', cursive;    
+}
+h3,a {
+    font-family: 'Patrick Hand', cursive;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #f2f2f2;
+}
+.container-welcome {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 10%;
+    left:  200px;
+}
+span {
+    color:rgba(172, 255, 47, 0.746);
+}
+.container-welcome h1 {
+    color: #f2f2f2;
+    padding-top: 55px;
+    font-size: 7rem;
+}
+.container-welcome img {
+    width: 300px;
+    height: 300px;
+}
+/*bienvenida*/
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Imagenes/Seleccion/ja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    color:#f2f2f2;
+
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+}
+
+
+.h3 {
+    position: absolute;
+    font-size: 2rem;
+    padding-left: 41%;
+    padding-top: 30%;
+    color: #f2f2f2;
+}
+
+.vamos a {
+    margin-top: 34%;
+    margin-left: 49%;
+    padding: 10px;  
+    position: absolute;   
+    border-radius: 15px;
+
+    text-decoration: none;
+    font-size:x-large;
+    color: #f2f2f2;
+    background-color: rgb(20, 136, 136);
+    transition: 1s;
+}
+
+.vamos a:hover {
+    transition: 1s;
+    color: rgb(20, 136, 136);
+    background-color: #f2f2f2;
+}
+/*seccion playas,ciudades y motañas*/
+section {
+    height: 100vh;
+}
+section h2,a{
+    color: #f2f2f2;
+    font-size: 3rem;  
+}
+
+#uno{
+    background-image: url(../Imagenes/Seleccion/Fondo10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+br{
+    background-color: black;
+}
+
+.preg{
+    width: 1300px;
+    height: 70px;
+    margin-top: 80px;
+}
+
+.pr{
+    position: absolute;
+    font-family: cursive;
+    color: black;
+    margin-left: 310px;
+    font-size: 4rem;
+    transition: 1s;
+}   
+
+
+
+.lin{
+    width: 600px;
+    border-width: 10px;
+    margin-left: 360px;
+    border-radius: 15px;
+}
+
+
+/*contenedor de playas,ciudades y motañas*/
+.container {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+/*areas playas,ciudades y motañas*/
+
+
+.container .uno a {
+    padding: 100px;
+    color: #f2f2f26a;
+    background-image: url(../Imagenes/Seleccion/Playas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    font-size:3rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container .dos a {
+    padding: 100px;
+    background-image: url(../Imagenes/Seleccion/Montañas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color:#f2f2f26a;
+    font-size:3rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container .tres a {
+    padding: 100px;
+    background-image: url(../Imagenes/Seleccion/Ciudades.jpg);
+    background-size: cover;
+    color:#f2f2f26a;
+    font-size:3rem;
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+/*opacidad al seleccionar un area*/
+.container .uno a:hover {
+    color: #f2f2f2;
+    transition: 1s;
+
+    background-image: url(../Imagenes/Seleccion/playa-opaca.jpg);
+    
+}
+.container .dos a:hover {
+    color: #f2f2f2;
+    transition: 1s;
+    background-image: url(../Imagenes/Seleccion/montañas-opaca.jpg);
+}
+.container .tres a:hover {
+    color: #f2f2f2;
+    transition: 1s;
+    background-image: url(../Imagenes/Seleccion/unnamed.jpg);
+}
+/*burbujas*/
+.burbujasuno {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 5%;
+
+    border-radius: 100px;
+    animation: burbujas 3s linear infinite;
+}
+.burbujasdos {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 29%;
+
+    border-radius: 100px;
+    animation: burbujas 3.5s linear infinite;
+}
+.burbujastres {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+
+    border-radius: 100px;
+    animation: burbujas 3.20s linear infinite;
+}
+.burbujascuatro {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 25%;
+
+    border-radius: 100px;
+    animation: burbujas 5s linear infinite;
+}
+.burbujascinco {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 47%;
+
+    border-radius: 100px;
+    animation: burbujas 3s linear infinite;
+}
+.burbujasseis {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: 45%;
+
+    border-radius: 100px;
+    animation: burbujas 9s linear infinite;
+}
+.burbujassiete {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width:3rem;
+    height: 3rem;
+    left: 37%;
+
+    border-radius: 100px;
+    animation: burbujas 4.3s linear infinite;
+}
+.burbujasocho {
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 2.7rem;
+    height: 2.7rem;
+    left: 2%;
+
+    border-radius: 100px;
+    animation: burbujas 3.7s linear infinite;
+}
+.burbujasnueve {
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    opacity: .3;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 15%;
+
+    border-radius: 100px;
+    animation: burbujas 5.5s linear infinite;
+}
+@keyframes burbujas{
+    0% {
+        opacity: 0;
+        bottom: 0;
+    } 
+    50%{
+        opacity: .4;
+    } 
+    100%{
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+
+.container-footer {
+    display: flex;
+    background-color: red;
+}
+
