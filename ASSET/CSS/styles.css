@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -40,9 +41,10 @@ span {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url(../Imagenes/Seleccion/ja.jpg);
+    background-image: url(../Imagenes/Caribbean\ islands.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 header:before {
@@ -51,10 +53,9 @@ header:before {
     height: 100vh;
     width: 100%;
     color:#f2f2f2;
-
     background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.8;
 }
 
@@ -86,7 +87,7 @@ background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, F
     color: rgb(20, 136, 136);
     background-color: #f2f2f2;
 }
-/*seccion playas,ciudades y motañas*/
+/*seccion playas , ciudades y motañas*/
 section {
     height: 100vh;
 }
@@ -96,9 +97,10 @@ section h2,a{
 }
 
 #uno{
-    background-image: url(../Imagenes/Seleccion/Fondo10.jpg);
+    background-image: url(/ASSET/Imagenes/Seleccion/palmeras.avif);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-block: 10em;
 }
 
 br{
@@ -131,7 +133,7 @@ br{
 
 
 /*contenedor de playas,ciudades y motañas*/
-.container {
+.catalogue-container {
     margin-top: 160px;
     display: flex;
     justify-content: space-around;
@@ -140,7 +142,7 @@ br{
 /*areas playas,ciudades y motañas*/
 
 
-.container .uno a {
+.catalogue-container .uno a {
     padding: 100px;
     color: #f2f2f26a;
     background-image: url(../Imagenes/Seleccion/Playas.jpg);
@@ -152,7 +154,7 @@ br{
     cursor: pointer;
 }
 
-.container .dos a {
+.catalogue-container .dos a {
     padding: 100px;
     background-image: url(../Imagenes/Seleccion/Montañas.jpg);
     background-repeat: no-repeat;
@@ -164,7 +166,7 @@ br{
     cursor: pointer;
 }
 
-.container .tres a {
+.catalogue-container .tres a {
     padding: 100px;
     background-image: url(../Imagenes/Seleccion/Ciudades.jpg);
     background-size: cover;
@@ -175,19 +177,19 @@ br{
     cursor: pointer;
 }
 /*opacidad al seleccionar un area*/
-.container .uno a:hover {
+.catalogue-container .uno a:hover {
     color: #f2f2f2;
     transition: 1s;
 
     background-image: url(../Imagenes/Seleccion/playa-opaca.jpg);
     
 }
-.container .dos a:hover {
+.catalogue-container .dos a:hover {
     color: #f2f2f2;
     transition: 1s;
     background-image: url(../Imagenes/Seleccion/montañas-opaca.jpg);
 }
-.container .tres a:hover {
+.catalogue-container .tres a:hover {
     color: #f2f2f2;
     transition: 1s;
     background-image: url(../Imagenes/Seleccion/unnamed.jpg);
@@ -340,9 +342,44 @@ background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, F
         bottom: 100vh;
     }
 }
-
-.container-footer {
-    display: flex;
-    background-color: red;
+/* footer */
+footer {
+    color: #f5f5f5;
+    background: #0575E6;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #021B79, #0575E6);  /*Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #021B79, #0575E6); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+    display: flex; 
+    justify-content: center;
+    /* background: url(/ASSET/Imagenes/Seleccion/ja.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  */
+    height: 20em;
 }
 
+
+.container-footer {
+    padding-block: 5em;
+}
+
+.container-footer .info .links-info {
+    display: flex;
+    flex-direction: column;
+    text-align: row;
+    flex-wrap: wrap;
+    
+}
+.container-footer .info .links-info a{
+    color: #cbc5c5;
+    font-size: 20px;
+    vertical-align:baseline;
+}
+.container-footer .info .links-info i:hover{
+    color: #f5f5f5;
+}
+
+
+/* icons */
+/* @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css') */
+
+/* @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css') */
