@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,70 +8,84 @@
     <link rel="stylesheet" href="ASSET/CSS/styles.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <!-- incos -->
+    <link rel="shortcut icon" href="./ASSET/Imagenes/turistic.ico" type="image/x-icon">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Turistic</title>
 </head>
 
 <body>
 
     <!--Bienvenida-->
-    <header>
-        <div class="burbujas-contenedor">
-            <div class="burbujasuno"></div>
-            <div class="burbujasdos"></div>
-            <div class="burbujastres"></div>
-            <div class="burbujascuatro"></div>
-            <div class="burbujascinco"></div>
-            <div class="burbujasseis"></div>
-            <div class="burbujassiete"></div>
-            <div class="burbujasocho"></div>
-            <div class="burbujasnueve"></div>
-        </div>
-        <div class="container-welcome">
-            <h1>Bienvenidos <span>a</span></h1>
-            <img src="ASSET/Imagenes/Logo.png" alt="Logo de turistic">
-        </div>
-        <div class="vamos">
-            <h3 class="h3">¿A donde vamos hoy?</h3>
-            <a href="#uno">vamos</a>
-        </div>
+    <header class="header">
+        <nav>
+            <div style="display: flex;align-items: center;">
+                <img src="./ASSET/Imagenes/turistic.png" alt="" style="height: 50px; width: 50px;">
+                <p>Turistic</p>
+            </div>
+            <ul>
+                <li><a href="#"><span class="material-symbols-outlined">menu</span><span class="a">Categorias</span></a>
+                </li>
+                <li><a href="#"><span class="material-symbols-outlined">add_a_photo</span><span
+                            class="a">Blog</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">group</span><span class="a">Quienes
+                            somos</span></a></li>
+            </ul>
+        </nav>
 
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--catalogo-->
-    <main id="uno">
-        <div class="preg">
-            <h2 class="pr">¿Para donde quieres ir?</h2>
-        </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section class="info-insti">
+            <div class="turistic-logo">
+                <img src="./ASSET/Imagenes/Agregar-texto.svg" alt="turistic-logo" style="height: 20em;width: 20em;">
+            </div>
+            <div class="Text">
+                <h1>Turistic</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quod voluptatum quaerat, animi esse
+                    perferendis ducimus rerum adipisci praesentium fugiat enim eum suscipit, ad autem tenetur delectus
+                    error.
+                    Error, porro.</p>
+                <br>
+                <div id="eslogan"><span id="e-1">Busca</span><span id="e-2">Descubre</span><span
+                        id="e-3">Diviertete</span></div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,192C672,213,768,203,864,170.7C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
-        <div class="catalogue-container">
-            <div class="dos">
-                <h3><a href="ASSET/HTML/montañas.html">Montañas</a></h3>
-            </div>
-            <div class="uno">
-                <h3><a href="ASSET/HTML/playas.html">Playas</a></h3>
-            </div>
-            <div class="tres">
-                <h3><a href="ASSET/HTML/ciudades.html">Ciudades</a></h3>
-            </div>
-        </div>
+        <section class="Catalogo">
+            
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0099ff" fill-opacity="1"
+                d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,85.3C672,107,768,149,864,165.3C960,181,1056,171,1152,138.7C1248,107,1344,53,1392,26.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <!-- <div class="burbujas-contenedor" style="z-index: -1;">
+    <div class="burbujasuno" style="z-index: -1;"></div>
+    <div class="burbujasdos" style="z-index: -1;"></div>
+    <div class="burbujastres" style="z-index: -1;"></div>
+    <div class="burbujascuatro" style="z-index: -1;"></div>
+    <div class="burbujascinco" style="z-index: -1;"></div>
+    <div class="burbujasseis" style="z-index: -1;"></div>
+    <div class="burbujassiete" style="z-index: -1;"></div>
+    <div class="burbujasocho" style="z-index: -1;"></div>
+    <div class="burbujasnueve" style="z-index: -1;"></div>
+</div> -->
     </main>
-    <footer>
+    <!--catalogo-->
+
+    <!-- <footer>
         <div class="container-footer">
 
             <div class="info">
@@ -88,9 +102,9 @@
                     </P>
                 </div>
 
-            </div>
+            </div> -->
 
-            <!-- <div>
+    <!-- <div>
                 <ul>
                     <li><h2>Inicio</h2></li>
                     <li><h2>Catalogo</h2></li>
@@ -99,12 +113,8 @@
 
 
 
-            <!-- <div class="waves">
-            <div class="wave-uno"></div>
-            <div class="wave-dos"></div>
-            <div class="wave-tres"></div>
-        </div> -->
-        </div>
+
+    </div>
     </footer>
 </body>
 
