@@ -5,51 +5,56 @@
     scroll-behavior: smooth;
     font-family: "Concert One", sans-serif;
 }
+
+body {
+    background-color: #f7f7f6;
+}
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     position:fixed;
     z-index: 3;
-    
 
-    background-color: #0099ff;
-    color: #fff;
+    background-color: #f7f7f6;
+    box-shadow:0px 2px 4px #464446;
+    color: #23221f;
     padding-block: 5px;
     padding-inline: 10px;
     width: auto;
     min-width: 85em;
     top: 0;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.513);
-    will-change:scroll-position;
     
 }
+
+
 header nav ul  {
     display: flex;
     gap: 15px;
 
     font-size: 1.2rem;
-    color:#fff;
     text-decoration: none;
     list-style: none;
+    transition: color 0.4s ease-in-out;
 }
+
+
 header nav ul li a {
     display: flex;
     align-items: center;
 
-    color:#fff;
+    color:#23221f;
     text-decoration: none;
 }
+
+
+
 header nav ul li:hover {
-    border-bottom: 1px #fff solid;
+    border-bottom: 2px #23221f solid;
 }
+
 
 /**Info institucional*/
-
-
-body {
-    background-color: #f5f5f5;
-}
 
 .info-insti {
     display: flex;
@@ -59,11 +64,10 @@ body {
     padding-inline: 10em;
     padding-bottom: 10em;
 
-    color: #fff;
+    color: #f7f7f6;
 
     background-position:center;
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
@@ -78,39 +82,149 @@ body {
     height: 20em;
     
 }
-/* Eslogans */
+/** Eslogans */
 #eslogan {
     display: flex;
     gap: 20px;
-    color: #000;
+    color: #23221f;
 }
 #e-1 {
     background-color: #0099ff;   
-    box-shadow: 4px 4px  #000 ;
+    box-shadow: 4px 4px  #23221f ;
     padding: 2px 4px;
 }
 #e-2 {
     background-color: #ffe60d;
-    box-shadow: 4px 4px  #000 ;
+    box-shadow: 4px 4px  #23221f ;
     padding: 2px 4px;
 }
 #e-3 {
     background-color: #79FB00;
-    box-shadow: 4px 4px  #000 ;
+    box-shadow: 4px 4px  #23221f ;
     padding: 2px 4px;
 }
 
-/* Catalogo */
+/** Catalogo */
 
 .Catalogo {
     width: 100%;
-    height: 30em;
-    background-color: #0099ff;
-    
-
-    margin-top: -3px;
+    height: 65em;
+    background-color: #f7f7f6;
+    color: #23221f;
 }
 
+/*? Cards */
+
+.Catalogo .contenedor-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 2em;
+}
+.Catalogo .contenedor-cards .cards {
+    position: relative;
+    top: 20px;
+    left: -20px;
+    width: 18em;
+    height: 26em;
+    background-color: #f7f7f6;
+    text-align: center;
+    border: 2px solid #464446;
+    box-shadow: 10px -10px 0 -3px #f7f7f6, 10px -10px  #464446, 20px -20px 0 -3px #f7f7f6, 20px -20px  #464446 ;
+    transition: all 1s;
+}
+.Catalogo .contenedor-cards .cards h3 {
+    font-weight:lighter;
+    padding-block: 5px;
+    font-size: 1.8rem;
+}
+.Catalogo .contenedor-cards .cards p {
+    text-align: left;
+    margin-inline: 2px;
+    
+}
+.Catalogo .contenedor-cards .cards a {
+    text-align: center;
+    text-decoration: none;
+    color:#23221f;
+    background-color:#ffe70dd3;
+    /* padding-block: 1em; */
+    padding: 0.5em;
+    margin-bottom: 10px;
+    border: 1px solid #464446;
+    transition: all 0.4s;
+}
+.Catalogo .contenedor-cards .cards:hover {
+    top: 0px;
+    left: 0px;
+    box-shadow: none;
+    transition:all 90ms;
+}
+
+.Catalogo .contenedor-cards .cards a:hover {
+    background-color: #0099ff;
+    color: #f7f7f6;
+    transition: all 0.4s;
+}
+
+/** Blog's */
+.Blog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin-top: -3em;
+    height: 10em;
+    width: 100%;
+
+    color: transparent;
+    -webkit-text-stroke: 1px #f7f7f6 ;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./images/Andariego-Jarabacoa.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Blog h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 10px;
+    background-color: #2193b0;
+    width: 100%;
+    height: 10em;
+}
+
+.contenedor-izquierdo {
+    display: flex;
+    gap: 15px;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor-izquierdo ul li a {
+    display: flex;
+    align-items: center;
+
+    color:#23221f;
+    text-decoration: none;
+}
+
+.contenedor-derecho {
+    background-color: red;
+    width: 12em;
+    height: 5em;
+}
 /*burbujas*/
  .burbujasuno {
     background: #2193b0; 
@@ -253,6 +367,7 @@ background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, F
         bottom: 100vh;
     }
 }
+
 
 /* footer {
     color: #f5f5f5;
