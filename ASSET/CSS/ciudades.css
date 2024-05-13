@@ -3,245 +3,71 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
-h1,h2{
-    font-family: 'Charm', cursive;    
+:root {
+    --frist-color: #23221f;
+    --main-bg-color:#f7f7f6;
 }
-h3,a {
-    font-family: 'Patrick Hand', cursive;
-    text-decoration: none;
-
-}
-
 body{
-    background-image: url(../Imagenes/Ciudad/Fondo.jpg);
-    background-size: cover;
+    background-color: #e5e3e2;
+}
+a {
+    text-decoration: none;
 }
 
-/*Titulo del Area*/
-.tit{
-    width: 450px;
-    height: 100px;
-    font-family: cursive;
-    font-size: 3rem;
-    margin-left: 35%;
-}
-
-/*contenedor de los lugares*/
-.container {
+.casa {
+    position: fixed;
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
+    left: 10px;
+    top: 10px;
+    background-color: #23221f;
+    width: 4em;
+    height: 4em;
+    border-radius: 100px;
+    color: var(--main-bg-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+}
+
+.contenedor {
+    display: flex;
+    gap: 10px;
+    justify-content: stretch;
+    align-content: stretch;
     flex-wrap: wrap;
-    flex-direction: row;
+    padding: 3em;
 }
 
-/*espacios que hay entre filas*/
-.espacio {
-    height: 150px;
-    width: 100vw;
-}
-
-/*Lugares Turisticos*/
-.uno  {
-    width: 400px;
-    height: 200px;
-    color: #f2f2f26a;
-    background-image: url(../Imagenes/Ciudad/Altos\ de\ Chavon\ Cortado.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.dos {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Fortaleza\ de\ San\ Felipe\ Cortado.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    color:#f2f2f26a;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.tres {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Malecon\ de\ Puerto\ Plata\ Cortado.jpg);
-    background-size: cover;
-    color:#f2f2f26a;
-    font-size:3rem;
-    border-radius: 15px;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.cuatro {
-    width: 400px;
-    height: 200px;
-    color: #f2f2f26a;
-    background-image: url(../Imagenes/Ciudad/Museo\ del\ Ambar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.cinco {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Parque\ Manati\ Cortado.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    color:#f2f2f26a;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.seis {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Zona\ Colonial\ Cortado.jpg);
-    background-size: cover;
-    color:#f2f2f26a;
-    font-size:3rem;
-    border-radius: 15px;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.siete {
-    width: 400px;
-    height: 200px;
-    color: #f2f2f26a;
-    background-image: url(../Imagenes/Ciudad/Alcazar\ de\ Colón.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.ocho {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Faro\ a\ Colón.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    color:#f2f2f26a;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.nueve {
-    width: 400px;
-    height: 200px;
-    background-image: url(../Imagenes/Ciudad/Museo\ de\ las\ Casas\ Reales.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 15px;
-    color:#f2f2f26a;
-    font-size:3rem;
-    transition: 1s;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/*transición de lugares turisticos a opaco*/
-.uno:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Altos\ de\ Chavon\ Cortado\ Opaco.jpg); 
-}
-.dos:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Fortaleza\ de\ San\ Felipe\ Cortado\ Opaco.jpg);
-}
-.tres:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Malecon\ de\ Puerto\ Plata\ Cortado\ Opaco.jpg);
-}
-.cuatro:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Museo\ del\ Ambar\ Opaco.jpg);
+.contenedor .cards {
+    font-family: 'Patrick Hand', cursive;
+    color: var(--main-bg-color);
+    font-size: 2.5rem;
     
-    
-}
-.cinco:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Parque\ Manati\ Cortado\ Opaco.jpg);
-}
-.seis:hover {
-    color: #f2f2f2;
-    transition: 1s;
-    background-image: url(../Imagenes/Ciudad/Zona\ Colonial\ Cortado\ Opaco.jpg);
-}
-.siete:hover {
-    color: #f2f2f2;
-    transition: 1s;
 
-    background-image: url(../Imagenes/Ciudad/Alcazar\ de\ Colon\ Cortado\ Opaco.jpg);
-    
-}
-.ocho:hover {
-    color: #f2f2f2;
-    transition: 1s;
+    padding: 1em;
+    height: 8em;
+    border-radius: 15px;
 
-    background-image: url(../Imagenes/Ciudad/Faro\ a\ Colon\ Cortado\ Opaco.jpg);
+
+
+    background-position: center; 
+    background-size: cover;
+    background-repeat:no-repeat ;
+
+    transition: all 0.2s;
 }
 
-.nueve:hover {
-    color: #f2f2f2;
-    transition: 1s;
-
-    background-image: url(../Imagenes/Ciudad/Museo\ de\ las\ Casas\ Reales\ Opaco.jpg);
+.contenedor .cards:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    z-index: 4;
 }
+
+.contenedor .cards h2 {
+    position: relative;
+    bottom: -260px;
+    left: -30px;
+}
+
