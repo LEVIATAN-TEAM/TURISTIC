@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    /* font-family: "Concert One", sans-serif; */
+    font-family: 'Patrick Hand', cursive;
 }
 :root {
     --frist-color: #23221f;
     --main-bg-color:#f7f7f6;
+    --body-bg-color:#e5e3e2;
 }
 body{
     background-color: #e5e3e2;
@@ -33,7 +36,7 @@ a {
 
 .contenedor {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     justify-content: stretch;
     align-content: stretch;
     flex-wrap: wrap;
@@ -41,7 +44,6 @@ a {
 }
 
 .contenedor .cards {
-    font-family: 'Patrick Hand', cursive;
     color: var(--main-bg-color);
     font-size: 2.5rem;
     
@@ -68,6 +70,7 @@ a {
 .contenedor .cards h2 {
     position: relative;
     bottom: -260px;
-    left: -30px;
+    left: -15px;
+
 }
 

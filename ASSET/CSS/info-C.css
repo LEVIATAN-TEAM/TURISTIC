@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Concert One", sans-serif;
+}
+
+:root {
+    --frist-color: #23221f;
+    --main-bg-color:#f7f7f6;
+    --body-bg-color:#e5e3e2;
+    --rabius:15px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: rgb(97, 97, 185);
+    width: 50px;
+    height: 50px;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+body{
+    background-color: #E9E9E9;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    padding: 2em;
+    margin: 2em;
+    border-radius: var(--rabius);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*! Presentacion */
+
+.presentacion {
+    display: flex;
+    gap: 20px;
+}
+
+.presentacion .img-uno img{
+    width: 50em;
+    height: 25em;
+    border-radius: var(--rabius);
+}
+.casa {
+    position: fixed;
+    display: flex;
+    left: 10px;
+    top: 10px;
+    background-color: #23221f;
+    width: 4em;
+    height: 4em;
+    border-radius: 100px;
+    color: var(--main-bg-color);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 9;
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
