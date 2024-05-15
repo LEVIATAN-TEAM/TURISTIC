@@ -136,6 +136,7 @@ header nav ul li:hover {
     background-color: #f7f7f6;
     text-align: center;
     border: 2px solid #464446;
+    border-radius: 15px;
     box-shadow: 10px -10px 0 -3px #f7f7f6, 10px -10px  #464446, 20px -20px 0 -3px #f7f7f6, 20px -20px  #464446 ;
     transition: all 1s;
 }
@@ -148,6 +149,10 @@ header nav ul li:hover {
     transition:all 90ms;
 }
 
+.Catalogo .contenedor-cards .cards img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 .Catalogo .contenedor-cards .cards h3 {
     font-weight:lighter;
