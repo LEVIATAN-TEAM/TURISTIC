@@ -13,7 +13,10 @@
     --amarillo:#ffe60d;
     --rabius:15px;
     --space:2em;
-    --h-size:2rem;
+    --h-size:3rem;
+    --h4-size:2rem;
+    --text-size:1.2rem;
+    --img-size:16em;
 }
 
 .material-icons {
@@ -60,6 +63,7 @@ main {
 }
 h1 {
     font-size: 4rem;
+    text-align: left;
     font-family: "Concert One", sans-serif;
 }
 h2 {
@@ -67,15 +71,25 @@ h2 {
     margin-top: var(--space);
     font-family: "Concert One", sans-serif;
 }
+h4 {
+    font-size: var(--h4-size);
+}
 
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
 .casa {
     position: fixed;
     display: flex;
     left: 10px;
     top: 10px;
     background-color: var(--frist-color);
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 100px;
     color: var(--main-bg-color);
     text-decoration: none;
@@ -95,9 +109,16 @@ h2 {
 }
 
 .presentacion .img-uno img{
-    width: 50em;
-    height: 25em;
+    width: 43em;
     border-radius: var(--rabius);
+}
+.presentacion span {
+    font-size: var(--h-size);
+    color: #0099ff;
+    
+}
+.presentacion a {
+    text-decoration: none;
 }
 
 /*! Actividades */
@@ -115,12 +136,12 @@ h2 {
     position: relative;
     display: flex;
     gap: 15px;
-    align-items: center;
+    align-items: start;
     text-decoration: none;
     width: 100%;
 }
 .actividades .catalogo-acti img {   
-    width: 8em;
+    width: var(--img-size);
     border-radius: var(--rabius);
 
 }
@@ -129,20 +150,28 @@ h2 {
 }
 
 .actividades .catalogo-acti a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 5px;
 
     color:var(--frist-color);
+    font-size: var(--text-size);
     text-decoration: none;
+    transition: color 0.5s;
 }
 
+.actividades .catalogo-acti a:hover {
+    color: #0099ffe9;
+    transition: color 0.5s;
+}
 .actividades .catalogo-acti span {
     color: var(--frist-color);
+    font-size: var(--text-size);
 }
 /*! H-R */
 .H-R {
-    display: flex;
+    display: inline-block;
 }
 
 /*! Hoteles */
@@ -150,20 +179,20 @@ h2 {
     margin-block: var(--space);
     position: relative;
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-wrap: wrap;
     gap: 4em;
 }
 .H-R .hoteles .cards {
     position: relative;
     display: flex;
+    width: 100%;
     gap: 15px;
-    align-items: center;
+    align-items: start;
     text-decoration: none;
-    width: 50%;
 }
 .H-R .hoteles .cards .img-dos img {
-    width: 8em;
+    width: var(--img-size);
     border-radius: var(--rabius);
 }
 .H-R .hoteles .cards a {
@@ -172,11 +201,19 @@ h2 {
     gap: 5px;
 
     color:var(--frist-color);
+    font-size: var(--text-size);
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+.H-R .hoteles .cards a:hover {
+    color: #0099ffe9;
+    transition: color 0.5s;
 }
 
 .H-R .hoteles .cards span {
     color: var(--frist-color);
+    font-size: var(--text-size);
 }
 
 /*! Restaurantes */
@@ -184,20 +221,21 @@ h2 {
     margin-block: var(--space);
     position: relative;
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-wrap: wrap;
     gap: 4em;
+    top: 0;
 }
 .H-R .restaurantes .cards {
     position: relative;
     display: flex;
     gap: 15px;
-    align-items: center;
+    align-items: start;
     text-decoration: none;
-    width: 50%;
+    width: 100%;
 }
 .H-R .restaurantes .cards .img-dos img {
-    width: 8em;
+    width: var(--img-size);
     border-radius: var(--rabius);
 }
 .H-R .restaurantes .cards a {
@@ -207,14 +245,28 @@ h2 {
 
     color:var(--frist-color);
     text-decoration: none;
+    transition: color 0.5s;
 }
-
+.H-R .restaurantes .cards a:hover {
+    color: #0099ffe9;
+    transition: color 0.5s;
+}
 .H-R .restaurantes .cards span {
     color: var(--frist-color);
+    font-size: var(--text-size);
 }
 .H-R .restaurantes .cards .estrellas span{
     color: var(--amarillo);
+    font-size: var(--text-size);
 }
+
+.derechos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+}
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
