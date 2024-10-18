@@ -69,7 +69,7 @@ a {
 
 .contenedor .cards h2 {
     position: relative;
-    bottom: -260px;
+    margin-bottom: 260px;
     left: -15px;
 
 }

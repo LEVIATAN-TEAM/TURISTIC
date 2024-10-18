@@ -85,21 +85,26 @@ a {
 .casa {
     position: fixed;
     display: flex;
-    left: 10px;
-    top: 10px;
+    left: 35em;
+    bottom: 0.5em;
     background-color: var(--frist-color);
-    width: 3em;
+    width: 8em;
     height: 3em;
     border-radius: 100px;
     color: var(--main-bg-color);
+
     text-decoration: none;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content: space-evenly;
     text-align: center;
     z-index: 9;
 }
 .casa span {
     color: var(--main-bg-color);
+}
+
+.casa a:hover {
+    color: #f7f7f6d5;
 }
 /*! Presentacion */
 
